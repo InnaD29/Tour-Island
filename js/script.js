@@ -1,15 +1,14 @@
-let modal = document.getElementById('modal-form');
-var btn = document.getElementById('btn');
-var btnClose = document.getElementById("close-form-modal");
+// let modal = document.getElementById('modal-form');
+// var btn = document.getElementById('btn');
+// var btnClose = document.getElementById("close-form-modal");
 
-btn.onclick = function () {
-	modal.style.display = "block";
-};
+// btn.onclick = function () {
+// 	modal.style.display = "block";
 
 // function viewForm(){
-//   document.getElementById("madal-form").style.display = "block";
+//   document.getElementById("modal-form").style.display = "block";
 // };
 
 // function closeForm() {
-// 	document.getElementById("madal-form").style.display = "none"
+// 	document.getElementById("modal-form").style.display = "none"
 // }

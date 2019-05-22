@@ -1,7 +1,7 @@
 function viewForm(){
-  document.getElementById("madal-form").style.display = "block";
+  document.getElementById("modal-form").style.display = "block";
 };
 
 function closeForm() {
-	document.getElementById("madal-form").style.display = "none"
+	document.getElementById("modal-form").style.display = "none"
 }

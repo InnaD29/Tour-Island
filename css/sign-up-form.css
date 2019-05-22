@@ -1,4 +1,6 @@
  main {
+  display: flex; 
+  justify-content:;
   /*display: none;*/
   position: absolute;
   top: 0;
@@ -10,6 +12,7 @@
   background-color: rgba(0,0,0,0.2);
 }
 main form {
+  display: flex; 
   background-color: #fff;
   width: 60%;
   height: 450px;

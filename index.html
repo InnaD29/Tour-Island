@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sign-up-form.css"> <!-- modal form to uses for sign up -->
 	<link href="fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+	<link rel="stylesheet" href="css/function-search.css">
 	<script src="js/script.js"></script>
 	
 </head>
@@ -17,41 +18,43 @@
 togglemenu for responsive by using @media -->
 
 <header>
+	<!-- Start logo -->
 	<figure>
 		<a href="#">
 			<img src="images/logotype.png" alt="logo-img-palm">
 		</a>
 	</figure>
+   <!-- Start navbar -->
 	<nav>
-		<ul>
-		  <li><a href="#aboutUs">About</a></li>
-		  <li><a href="#">News</a></li>
-		  <li><a href="#">Tropic Islands</a></li>
-		  <li><a href="#">Gallery</a></li>
-		  <li><a href="#">Contact</a></li>			
+		<ul class="navbar">
+			<li><a href="#about">About</a></li>
+		    <li><a href="#">News</a></li>
+		    <li><a href="#">Islands</a></li>
+		    <li><a href="#">Gallery</a></li>
+		    <li><a href="#">Contact</a></li>
 		</ul>
-	</nav><!-- navBar -->
+	</nav> <!-- navbar -->
 
-	<nav class="toggleMenu">	
-	 <label for="menu-toggle"><i class="fas fa-bars"></i>Toggle menu</label>
-	 <input type="checkbox" id="menu-toggle"/>
-		 <ul class="menu">
-			 <li><a href="#aboutUs">About</a></li>
-			 <li><a href="#">News</a></li>
-			 <li><a href="#">Tropic  Islands</a></li>
-			 <li><a href="#">Gallery</a></li>
-		<li><a href="#">Contact</a></li>
-</ul> <!-- menu -->
-</nav><!-- </nav>  --><!-- toggleMenu -->
+    <!-- Start toggle-menu for responsive -->
+	<nav class="toggle-menu">
+		<label for="menu-toggle"><i class="fas fa-bars"></i>Toggle menu</label>
+		<input type="checkbox" id="menu-toggle"/>
+		<ul class="manu">
+			<li><a href="#aboutUs">About</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Tropic  Islands</a></li>
+			<li><a href="#">Gallery</a></li>
+		    <li><a href="#">Contact</a></li>
+		</ul> <!-- menu -->
+	</nav> <!-- toggle-menu -->
 
-	<!-- form-search -->
-	<form action="#" method="#">
-		 <span><i class="fa fa-search"></i></span>
-		 <input type="search" placeholder="Srearch here">
-	</form> <!-- form-search -->
+	<!-- Start form-search -->
+	<form action="#" method="#" class="search">
+		<span><i class="fa fa-search"></i></span>
+		<input type="search" placeholder="Srearch here">
+	</form><!-- form-search -->
 	<!-- button sign up -->
 	<button id="btn-sign-up" class="btn-sign-up">Sign up</button>
-</header> <!-- the end header -->
 
 <!-- Madal-form -->
 <main id="modal-form" > 
@@ -63,12 +66,11 @@ togglemenu for responsive by using @media -->
 	<label for="e-mail"></label>
 	<input type="E-mail" id="e-mail">
 	<input type="password">
-	<button class="submit-sign-in">Submit</button>
+	<button class="submit-sign-in" onclick="viewForm()">Submit</button>
 </form> <!-- modal-form -->
-</main>
-<!-- Toggle-menu for responsive -->
+</main> <!-- main -->
+</header> <!-- the end header -->
 
-</header> <!-- header -->
 <!-- 
 <main>
 	

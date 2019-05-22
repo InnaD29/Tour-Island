@@ -1,0 +1,12 @@
+/********* hidden a placeholder-text during active*********/
+:focus::-webkit-input-placeholder{color: transparent;}
+:focus::-ms-input-placeholder{color: transparent;}
+:focus::-moz-input-placeholder{color: transparent;}
+
+/***hidden a button-search (x) during active placeholder**/
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none;}
