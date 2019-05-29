@@ -16,10 +16,11 @@
 togglemenu for responsive by using @media -->
 <header>
 	<!-- STATR LOGO -->
-	<a href="#">
-		<img src="images/logotype.png" alt="logo-img-palm">
-	</a> <!-- end logo -->
-
+	<figure>
+		<a href="#">
+			<img src="images/logotype.png" alt="logo-img-palm">
+		</a> <!-- end logo -->
+	</figure>
 	<!-- START NAVBAR -->
 	<nav class="top-menu">
 		<ul class="navbar">
@@ -50,7 +51,7 @@ togglemenu for responsive by using @media -->
 		<input type="search" placeholder="Srearch here">
 	</form><!-- end form-search -->
 	<!-- START BUTTON SIGN UP -->
-	<button id="btn-sign-up" class="btn-sign-up">Sign up</button>
+	<button id="btn-sign-up" class="btn-sign-up"><span>Sign up</span></button>
 
 <!-- START MODAL-FORM FOR RESPONSIVE -->
 	<main id="modal-form" class="modal-form" > 
@@ -68,16 +69,20 @@ togglemenu for responsive by using @media -->
 </header> <!-- the end header -->
 
 <!-- Start block video-coverr which contain video and overlay-text and button have been named "See more" -->
-<main class="basic-container">
+<main class="basic-container"> 
+	<section class="video-coverr">	
 	<video autoplay loop muted playsinline class="bg_video">
 		<source src="video_coverr/Tropical.mp4"></source>
 		<source src="video_coverr/Tropical.webm" type="video/webm"></source>
 	</video>
+	
 	<section class="overlay-text"> 
 		<h1>Travel deprives you of speech, and 
-		<span>then turns you into a better storyteller</span></h1>
-    	<a href="#" class="btn-overlay">Find out more</a>
+		<span>then turns you into a better storyteller</span>
+		</h1>
+    <a href="#" class="main-btn">Find out more</a>
 	</section> <!-- end block overlay-text-->
+</section>
 
 <!-- Start block trevel-guide --> 
 	<section class="tevel-guide">
@@ -87,7 +92,7 @@ togglemenu for responsive by using @media -->
 	<section class="describe-guide">
 	    <h2>Travel guides</h2>
 	    <p>Ready to go? Get to the heart of Caribbean with one of Lonely Planet's <span>  in-depth, award-winning guidebooks.</span></p> 
-	    <a href="#">Read more</a>
+	    <a href="#" class="main-btn">Read more</a>
 	</section> <!-- describe-guide -->
 </section> <!-- tevel_guide -->
 
@@ -154,8 +159,8 @@ togglemenu for responsive by using @media -->
 		
 <footer>
 	<section class="footer-container">
-			<section class="info-tours">
-				<h6>Islands</h6>
+			<section class="info-tours islands">
+				<h6><span>Islands</span>Islands</h6>
 				<ul>
 					<li><a href="#">Bali</a></li>
 					<li><a href="#">Maldives</a></li>
@@ -166,28 +171,29 @@ togglemenu for responsive by using @media -->
 			</section>  <!--info-tours of islands -->
 
 			<section class="info-tours">
-			<h6>Company</h6>
+			<h6> <span>Company</span></h6>
 				<ul>
-					<li><a href="#">About us</a></li>
+					<li><a href="#">About</a></li>
+					<li class="link-footer"><a href="#">Island</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">Jobs</a></li>
-					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</section> <!-- info-tours of company -->
 
 	<section class="social-connect">
-			<h6>Connect with us</h6>
+			<h6><span>Connect with us</span></h6>
 				<section class="social">	
 					<ul class="social-list">
-						<li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
-						<li><a href="#"><i class="fab fa-twitter-square"></i>Twitter</a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+						<li><a href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i><span>Twitter</span></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i><span>Linkedin</span></a></li>
 					</ul>
 					<ul class="social-list">	
-						<li class="social-box"><a href="#"><i class="fab fa-blogger"></i>Blog</a></li>
-						<li class="social-box"><a href="#"><i class="fab fa-youtube-square"></i>YouTube</a></li>
-						<li class="social-box"><a href="#"><i class="fab fa-google-plus-square"></i>Google+</a></li>
+						<li><a href="#"><i class="fab fa-blogger"></i><span>Blog</span></a></li>
+						<li><a href="#"><i class="fab fa-youtube-square"></i><span>YouTube</span></a></li>
+						<li><a href="#"><i class="fab fa-google-plus-square"></i><span>Google+</span></a></li>
 					</ul>
 					</section>
 		</section> <!-- social-connect-->
