@@ -5,350 +5,349 @@ article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {display:block;}
 
 body {
-		font: 100%/1.4 Arial, Helvetica, sans-serif;
-		box-sizing: border-box;
+	font: 100%/1.4 Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	color: #fff;
 }
 /*styling link-btn for main-page*/
 a.main-btn { /*link like button for trevel-guid and overlay*/
-	    text-decoration: none;
-	    color: #fff;
-	    font-size: 1.5vw;
-		text-align: center;
-		display: block;
-		margin: 50px auto;
-		background-color: #2C75FF;
-		width: 15%;
-		padding: 10px;
-		border-radius: 50px;
+	border-radius: 50px;
+	background-color: #2C75FF;
+	color: #fff;
+	display: block;
+	font-size: 1.5vw;
+	margin: 50px auto;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	width: 15%;
 }
 a.main-btn:hover {background-color: #0066FF;}
 
 /****************FOR RESPONSIVE************/
-.toggle-menu,/*#modal-form*/.link-footer   {display: none;} /*hidden toggle-menu, modal-form
- for responsive and link footel list less 960px */
+.link-footer {display: none;} /*for responsive link footer list less 960px */
 
-/*START STYLING TOGGLE-MENU FOR RESPONSIVE*/
+/************ TOGGLE-MENU FOR RESPONSIVE************/
 .toggle-menu {
-		height: 40px;
-		width: 35%;
+	height: 40px;
+	display: none;
+	width: 35%;
 }
 .toggle-menu ul {list-style-type: none; }
 
 .toggle-menu label { 
-    	position: relative;
-     	display: inline-block;
-    	color: #fff;
-    	text-align: right;
-    	text-transform: uppercase;
-    	background-color: rgba(0,0,0,0.8);
-    	border: 1px solid #171717;
-    	padding: 5px;
-    	cursor: pointer;
-    	font-size: 3vw;
-    	width: 100%;
+	background-color: rgba(0,0,0,.8);
+    border: 1px solid #171717;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2vw;
+    position: relative;
+    padding: 10px;
+    text-align: right;
+    text-transform: uppercase;
+ 	width: 60%;
 }
 input#menu-toggle  {display: none;} /*hidden checkbox for label which was name menu-toggle*/
-/*start is styling menu which  is like dropdown-menu*/
 
+/*start is styling menu which  is like dropdown-menu*/
 .menu a {
-    	color: #fff;
-    	text-decoration: none;
-    	text-transform: uppercase;
-    	padding: 0;
+	color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .menu {
-      	background-color:rgba(0,0,0,.7);
-      	width: 212px;
-      	overflow: hidden;
-      	max-height: 0;
-      	padding: 0;
-      	text-align: center;
-      	-webkit-transition: all 0.3s ease;
+    background-color:rgba(0,0,0,.7);
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 70%;
+   -webkit-transition: all 0.3s ease;
 }
 .menu li {padding: 5px;}
-
 .menu li:first-of-type {margin-top: 15px;}
 .menu li:last-of-type {margin-bottom: 15px;}
+
 /*icon for menu-barss*/
 .fas { 
-      	position: absolute;
-      	left: 15px;
-       	top: 0;
-       	padding-top: 8px;
+    position: absolute;
+    left: 15px;
+    top: 12px;
 }
 #menu-toggle:checked + .menu {max-height: 250px;}
 /*********end toggle-menu for responsive*************/
 
 /*******************HEADER****************/
 header {
-	    display:flex;
-		justify-content: space-around;
-		align-items: center;
-		position: fixed;
-		top: 0;
-		background-color: #000;
-		width: 100%;
-		height: 120px;
-		z-index: 100;
+	align-items: center;
+	display:flex;
+	background-color: #000;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 120px;
+	z-index: 100;
 }
 /**********NAVBAR INSIDE HEADER*******/
 ul.navbar { display: flex;} /*ul is conteiner for list "li"*/
 
-header .navbar li {
-		padding: 5px 20px 5px 20px;
-		border-left: 1px solid #171717;
-		text-align: center;
-		width: 20%;
+.navbar li {
+	border-left: 1px solid #171717;
+	padding: 5px 20px 5px 20px;
+	text-align: center;
+	width: 20%;
 }
 .navbar li:last-of-type {border-right: 1px solid #171717;}
 .navbar li:hover {background-color: #171717;}
 
-header .navbar a {
-		text-decoration: none;
-		text-transform: uppercase;
-		color: #FFF;
-		font-size: 1.3vw;
+.navbar a {
+	color: #FFF;
+	font-size: 1.3vw;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 a.btn-sign-up {
-	    text-decoration: none;
-	    display: block;
-	    text-align: center;
-		background-color: #000;
-		padding: 5px 10px 5px 10px;
-		border: 1px solid #fff;
-		border-radius: 50px;
-		color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	background-color: #000;
+	display: block;
+	color: #fff;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	text-align: center;
 }
 .btn-sign-up span {padding: 10px;}
  header button:hover {background-color: #171717;}
 }
 /************SEARCH INSIDE HEADER************/
-
 input.search {position: relative; z-index: 1;}
-/*icon lupa*/
+
 form.search {position: relative; z-index: 2;}
 /*icon lupa*/
 .fa-search{
-		position: absolute;
-		top: 5px;
-		left: 185px;
-		color: #171717;
-		font-size: 22px;
-		cursor: pointer;
+	color: #171717;
+	cursor: pointer;
+	font-size: 22px;	
+	position: absolute;
+	top: 5px;
+	left: 185px;
 }
 .search input {
-		height: 32px;
-		width: 220px;
-		outline: none;
-		border: none;
-		border-radius: 50px;
+	border: none;
+	border-radius: 50px;
+	height: 32px;
+	width: 220px;
+	outline: none;
 }
  .search input[type="search"] {padding-left: 15px;} /*padding for text: "search here"*/
 
- /*START IS STYLING VIDEO-CONTEINER WHICH CONTAIN VIDEO-COVERR*/
+/* CONTAINER OF MAIN PAGE*/
  main.basic-container {
-		width: 100%;
-		height: 100%;
-		margin-top: 120px; 
-		z-index: -100;
+ 	margin-top: 120px; 
+	height: 100%;
+	width: 100%;
+	z-index: -100;
 }
+/*START IS STYLING VIDEO-CONTEINER WHICH CONTAIN VIDEO-COVERR  AND OVERLAY-TEXT*/
 .video-coverr {
-		position: relative;
-		height: 300px;
-		width: 100%;
-		height: 100%;
-		margin-top: 120px;
-		z-index: -100px;
-	}
+	margin-top: 120px;
+	position: relative;
+	height: 300px;
+	width: 100%;
+	height: 100%;
+	z-index: -100px;
+}
 video.bg_video {
-  		position: relative;
-  		top:0;
-  		height: 100%;
-  		width: 100%;
+  	position: relative;
+  	top:0;
+  	height: 100%;
+  	width: 100%;
 }
-.overlay-text {
-  		position: absolute;
-  		top: 0;
- 		left: 0;
-  		width: 100%;
- 		height: 100%;
-  		display: flex;
-		justify-content: center;
-		flex-flow: row wrap;
-		align-content: center;
- }
-.overlay-text h1 {
-		text-align: center;
-	   	text-transform: uppercase;
-		font-size: 2em;
-		font-size: 2.5vw;
-		line-height: 1.5em;
-		width: 100%;
-		font-weight: bold;
-		color: #FFF;
+.overlay-text { /*container for overlay-text*/
+	align-content: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+    height: 100%;
+	width: 100%;
+ 	position: absolute;
+  	top: 0;
+ 	left: 0;
 }
-.overlay-text span {display: block;}
+.overlay-text h1 { 
+	font-size: 2.5vw;
+	font-weight: bold;
+	line-height: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.overlay-text span {display: block;} /*span use instead of br for line "h1"*/
 
 /*START IS STYLING TREVEL-GUIDE SECTION*/
-section.tevel-guide {
-		display: flex;
-		width: 85%;
-		margin: 100px auto;
+.tevel-guide {/* container for trevel-guide*/
+	display: flex;
+	margin: 100px auto;
+	width: 85%;
 }
 .tevel-guide img {
-		width: 100%;
-		height: 100%;
+	height: 100%;
+	width: 100%;
 }
 .describe-guide {
-		display: flex;
-		flex-flow: column;
-		justify-content: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 }
 .describe-guide h2 {
-		align-items: center;
-		text-align: center;
-		font-size: 2em;
-		padding: 20px;
+	align-items: center;
+	color: #000;
+	font-size: 2em;
+	padding: 20px;
+	text-align: center;
 }
 .describe-guide p {
-		font-size: 1.6vw;
-		width: 60%;
-		margin: 0 auto;
-		color: #756F6F;
+	color: #756f6f;
+	font-size: 1.6vw;
+	margin: 0 auto;
+	width: 60%;
 }
 .describe-guide a:hover {background-color: 	#0066FF;}
-/*end styling trevel-guide*/
 
-/**************START STYLING ABOUT-CONTAINER**************/
+/**************STYLING ABOUT-CONTAINER**************/
 .about-conteiner {
-		width: 85%;
-		margin: 100px auto;
+	margin: 100px auto;
+	width: 85%;
 }
 .title-about h2 {
-	  	text-align: center;
-	  	font-size: 3em;
-	  	color: #756F6F;
-	  	text-transform: capitalize;
-	  	margin: 100px 0 50px 0;
+	color: #756F6F;
+	font-size: 3em;
+	margin: 100px 0 50px 0;
+	text-align: center;
+	text-transform: capitalize;
 }
 .articles-about {display: flex;}
 
 .articles-about article { 
-		flex: 1;
-		margin: 20px;
+	flex: 1;
+	margin: 20px;
  }
 .articles-about p {
-		text-align: justify;
-		line-height: 1.8em;
-		color: #756F6F;
+	color: #756F6F;
+	line-height: 1.8em;
+	text-align: justify;
 }
 .articles-about h3 {
-		text-align: center;
-		margin: 20px;
-		font-size: 1.2em;
+	margin: 20px;	
+	font-size: 1.2em;
+	text-align: center;
 }
-/*end styling about-conteiner*/
 
-/***************START STYLING NEWS-CONTEINER***********/
+/***************STYLING NEWS-CONTEINER***********/
 .news-conteiner {
-		width: 85%;
-		margin: 100px auto;
+	margin: 100px auto;
+	width: 85%;
 }
 .headers-news h4 {
-		text-transform: uppercase;
-		font-size: 2.3em;
-		color: #756F6F;
-		margin: 30px 0 50px 20px;
+	color: #756F6F;
+	font-size: 2.3em;
+	margin: 30px 0 50px 20px;
+	text-transform: uppercase;
 }
 .headers-news p {
-		font-size: 1.5em;
-		color: #756F6F;
-		margin: 30px 0 50px 20px;
+	color: #756F6F;
+	font-size: 1.5em;
+	margin: 30px 0 50px 20px;
 }
 .box-news {display: flex;}
 
 .box-news figure {
-		flex: 1;
-		margin: 20px;
-		border: 1px solid #DCDCDC;
-		box-shadow: 0 0 10px rgba(0,0,0,0.6)
+	border: 1px solid #dcd;
+	box-shadow: 0 0 10px rgba(0,0,0,.6)
+	flex: 1;
+	margin: 20px;
 }
 .box-news figcaption {margin: 30px 0 30px 15px;}
-.box-news p {padding: 20px 0 20px 0; font-weight: bold;}
+
+.box-news p {
+	color: #000;
+	font-weight: bold;
+	padding: 20px 0 20px 0; 
+}
 .box-news time {color: #756F6F;}
 
 .box-news img {
-		width: 100%;
-		height: 210px;
-		padding: 0;
-		display: block;
-		margin: 0 auto;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	height: 210px;
+	width: 100%;
 }
 .box-news a {
-		text-decoration: none;
-		font-weight: bold;
-		color: #0000FF;
+	color: #0000FF;
+	font-weight: bold;
+	text-decoration: none;
 }
 .box-news a:hover {text-decoration: underline;}
 
-/******************START STYLING FOOTER*/
+/******************STYLING FOOTER*/
 footer {
-		background-color: #000;
-		width: 100%;
-		overflow: hidden;
-}
-.footer-container h6 {
-		text-transform: uppercase;
-		padding: 25px 0 25px 0;
-		color: #fff;
-		font-size: 1.1em;
-		width: 200px;
-		margin: 0 auto;
+	background-color: #000;
+	overflow: hidden;
+	width: 100%;
 }
 .footer-container {
-		display: flex;
-		justify-content: space-around;
-		width: 85%;
-		margin: 0 auto;
-		border-bottom: 1px solid #171717;
-		padding-bottom: 30px;
+	border-bottom: 1px solid #171717;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	width: 85%;
+}
+.footer-container h6 {
+	color: #fff;
+	font-size: 1.1em;
+	margin: 0 auto;
+	padding: 25px 0 25px 0;
+	text-transform: uppercase;
+	width: 200px;
 }
 .footer-container ul {
-		width: 200px;
-		margin:  0 auto;
+	margin:  0 auto;
+	width: 200px;
 }
 .footer-container a {
-		text-decoration: none;
-		color: #DCDCDC;
-		font-size: 1em;
+	color: #DCD;
+	font-size: 1em;
+	text-decoration: none;
 }
 .footer-container a:hover {text-decoration: underline;}
-.footer-container li      {padding: 5px;}
+.footer-container li {padding: 5px;}
 
-.info-tours {flex: 1 1 10%;}
+.info-tours 	{flex: 1 1 10%;}
 .social-connect {flex: 1 1 20%;}
 
 .social-connect h6 {
-		width: 300px;
-   		align-self: center;
-   		margin-bottom: 15px;
+	align-self: center;
+   	margin-bottom: 15px;
+   	width: 300px;
 }
-.social-connect li 	{
-		position: relative; 
- 		height: 35px;
+.social-connect li {
+	position: relative; 
+ 	height: 35px;
  }
-.social-connect a 	{
-		margin-left: 50px;   
-		display: block;
+.social-connect a {
+	display: block;
+	margin-left: 50px;   
 }
 .fab {
-  		position: absolute;
-  		top: 0 ;
-   		left: 0;
-   		right: 0;
-   		font-size: 28px;
-   		width: 50px;
-   		text-align: center;
+  	font-size: 28px;	
+  	position: absolute;
+  	top: 0 ;
+   	left: 0;
+   	right: 0;
+   	text-align: center;	
+   	width: 50px;
 }
 .social {display: flex;}
 
@@ -361,39 +360,41 @@ footer {
 .fa-google-plus-square 	{color: #d34836;}
 
 .copyraiting {
-		color: #fff;
-		margin: 40px;
-		text-align: center;
+	color: #fff;
+	margin: 40px;
+	text-align: center;
 }
 
 /**********RESPONSIVE FOR max-width 1200px******/
 @media  (max-width: 1200px) {
 
-.search        	{display: none;}
-.articles-about {flex-flow: column;}
-} /*****end max-width: 1200px)******************/
+	.search  {display: none;}
+	.articles-about {flex-flow: column;}
+} /*max-width 1200px*/
 
 /**********RESPONSIVE FOR max-width 960px******/
 @media  (max-width: 960px) {
-.footer-container 				{flex-flow: column;}
-.islands,.footer-container span {display: none;}
-.link-footer 					{display: flex;}
+	.footer-container {flex-flow: column;}
 
-.footer-container ul {
-		width: 100%;
+	.islands,
+	.footer-container span {display: none;}
+
+	.link-footer {display: flex;}
+
+	.footer-container ul {
 		display: flex;
+		width: 100%;
 }
-.info-tours 	{align-self: center;}
-.social-connect {align-self: center;}
-} 
-/************end (max-width: 960px)*************/
+	.info-tours, 	
+	.social-connect {align-self: center;}
+}  /*max-width 960px*/
+
 
 /**********RESPONSIVE FOR max-width 800px******/
 @media  (max-width: 800px) {
 	.box-news 		{flex-flow: column;}	
 	.box-news img 	{height: 100%;}
-}
-/*********end  max-width 800px*****************/
+} /*end max-width 800px*/
 
 /*********RESPONSIVE FOR max-width 766px********/
 @media  (max-width: 766px) {
@@ -401,33 +402,33 @@ footer {
 		display: flex;
 		flex: 1;
 }
-header img {width: 80%;}
-	a.main-btn 			{font-size: 3vw; width: 20%;}
-	.tevel-guide 		{flex-flow: column;}
-	.about-conteiner 	{margin-top: 50px;}
+	header img {width: 80%;}
+	a.main-btn 		 {font-size: 3vw; width: 20%;}
+	.tevel-guide 	 {flex-flow: column;}
+	.about-conteiner {margin-top: 50px;}
 
 	.describe-guide p {
 		font-size: 1.2em;
 		width: 100%;
 }
-.top-menu {display: none;}
+	.top-menu {display: none;}
 
-.toggle-menu {
+	.toggle-menu {
 		display: flex;
 		flex-flow: column;
 		flex-flow: row wrap;
 }
-.overlay-text h1 {font-size: 3vw;}
+	.overlay-text h1 {font-size: 3vw;}
 
-.tevel-guide img {
-		width: 60%;
+	.tevel-guide img {
 		display: block;
 		margin: 0 auto;
+		width: 60%;
 }
-}/*****************end (max-width: 766px)*********/
+} /*end max-width 766px*/
 
 /***********RESPONSIVE FOR max-width 400px*******/
 @media  (max-width: 400px) {
-	.toggle-menu {align-self: flex-end;}
+	.toggle-menu     {align-self: flex-end;}
 	.overlay-text h1 {font-size: 3vw;}
-}
+} /*end max-width 400px*/

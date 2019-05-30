@@ -1,170 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Island Tours</title>
-	<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> <!-- reset css -->
-	<link rel="stylesheet" href="css/style.css"> <!-- main css -->
-	<link rel="stylesheet" href="css/sign-up-form.css"> <!-- modal form to uses for sign up -->
-	<link href="fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles fontawesome-->
-	<link rel="stylesheet" href="css/function-search.css"> 
-	<script src="js/script.js"></script>
-</head>
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Island Tours</title>
+			<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> <!-- reset css -->
+			<link rel="stylesheet" href="css/style.css"> <!-- main css -->
+			<link rel="stylesheet" href="css/sign-up-form.css"> <!-- modal form to uses for sign up -->
+			<link href="fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles fontawesome-->
+			<link rel="stylesheet" href="css/function-search.css"> 
+	</head>
 <body>
 <!-- Start header which contains: logo, form-search, nav and 
 togglemenu for responsive by using @media -->
 <header>
-	<!-- STATR LOGO -->
-		<a href="#">
-			<img src="images/logotype.png" alt="logo-img-palm">
-		</a> <!-- end logo -->
-	<!-- START NAVBAR -->
-	<nav class="top-menu">
-		<ul class="navbar">
-			<li><a href="#about">About</a></li>
-		    <li><a href="#">News</a></li>
-		    <li><a href="#">Islands</a></li>
-		    <li><a href="#">Gallery</a></li>
-		    <li><a href="#">Contact</a></li>
-		</ul>
-	</nav> <!-- end navbar -->
-    <!-- START TOGGLE-MENU ROR RESPONSIVE -->
-	<nav class="toggle-menu">
-		<label for="menu-toggle"><i class="fas fa-bars"></i>Toggle menu</label>
-		<input type="checkbox" id="menu-toggle"/>
-		<ul class="menu">
-			<li><a href="#aboutUs">About</a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Islands</a></li>
-			<li><a href="#">Gallery</a></li>
-		    <li><a href="#">Contact</a></li>
-		</ul> <!-- menu -->
-	</nav> <!-- toggle-menu -->
+	<!-- LOGO -->
+			<a href="#"><img src="images/logotype.png" alt="palm"></a> 
+			<!--  NAVBAR -->
+			<nav class="top-menu"> <!-- class created for responsive -->
+					<ul class="navbar">
+						<li><a href="#about">About</a></li>
+		  			<li><a href="#news">News</a></li>
+		  			<li><a href="#">Islands</a></li>
+		  			<li><a href="#">Gallery</a></li>
+		  			<li><a href="#">Contact</a></li>
+				</ul>
+			</nav> <!-- end navbar -->
 
-	<!-- START FORM-SEARCH -->
-	<form action="#" method="#" class="search">
-		<span><i class="fa fa-search"></i></span>
-		<input type="search" placeholder="Srearch here">
-	</form><!-- end form-search -->
-	<!-- START BUTTON SIGN UP -->
-	<a href="#open-modal-form" class="btn-sign-up">Sign up</a>
+    <!-- TOGGLE-MENU ROR RESPONSIVE -->
+  	<nav class="toggle-menu">
+	 		<label for="menu-toggle"><i class="fas fa-bars"></i>Toggle menu</label>
+			<input type="checkbox" id="menu-toggle"/>
+			<ul class="menu">
+					<li><a href="#about">About</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#">Islands</a></li>
+					<li><a href="#">Gallery</a></li>
+		   		<li><a href="#">Contact</a></li>
+			</ul> 
+  	</nav> <!-- end toggle-menu -->
+
+	<!-- FORM-SEARCH -->
+		<form action="#" method="#" class="search">
+				<span><i class="fa fa-search"></i></span>
+				<input type="search" placeholder="Srearch here">
+		</form><!-- end form-search -->
+
+				<!-- BUTTON SIGN UP -->
+				<a href="#open-modal-form" class="btn-sign-up" onclick="openModal()">Sign up</a>
 </header> <!-- the end header -->
-<!-- START MODAL-FORM FOR RESPONSIVE -->
-<main class="conteiner-form" id="open-modal-form"> 
-	<form action="#" method="#" class="modal-form">
-		<a href="#" class="close-form"><i class="far fa-times-circle"></i></a>
-		<p class="sign-up">Sign up</p>
-			<section class="elements-form">
-					<section class="section-inputs">	
-						<input type="text" placeholder="First name" >
-						<input type="text" placeholder="Last name">
-					</section> <!-- elements-input first-name -->
-					<section class="section-inputs">
-				    	<input type="E-mail" placeholder="E-mail">
-					</section> <!-- elements-input email -->
-				    <section class="section-inputs"> 
-						<input type="password" placeholder="Password">
-						<input type="password" placeholder="Confirm Password">
-					</section> <!-- elements-input password -->
-					<section class="section-inputs" >
-						<input type="submit" value="Sign up" class="buttons-form">
-						<input type="submit" value="Sign in" class="buttons-form">	
-					</section> <!-- section-inputs and buttons-form -->
-			</section> <!-- elements-form -->
-	</form> <!-- end modal-form -->
-</main> <!-- end main modal-form -->
-<!-- Start block video-coverr which contain video and overlay-text and button have been named "See more" -->
-<main class="basic-container"> 
-	<section class="video-coverr">	
-		<video autoplay loop muted playsinline class="bg_video">
-			<source src="video_coverr/Tropical.mp4"></source>
-			<source src="video_coverr/Tropical.webm" type="video/webm"></source>
-	</video>
-	<section class="overlay-text"> 
-		<h1>Travel deprives you of speech, and 
-		<span>then turns you into a better storyteller</span></h1>
-    	<a href="#" class="main-btn">Find out more</a>
-	</section> <!-- end block overlay-text-->
-</section> <!-- end block video-coverr -->
 
-<!-- Start block trevel-guide --> 
+<!--  MODAL-FORM FOR RESPONSIVE -->
+<main class="conteiner-form" id="modal-form"> <!-- conteiner for blok form -->
+	<form action="#" method="#" class="modal-form">
+		<a href="#" class="close-form" onclick="closeModal()"><i class="far fa-times-circle"></i></a>
+		<p class="sign-up">Sign up</p>
+				<section class="elements-form"><!--  conteiner for elements-form -->
+							<section class="section-inputs">	
+								<input type="text" placeholder="First name" >
+								<input type="text" placeholder="Last name">
+							</section> <!-- end elements-input first-name -->
+							<section class="section-inputs">
+				    		<input type="E-mail" placeholder="E-mail">
+							</section> <!-- end  elements-input email -->
+				   		<section class="section-inputs"> 
+								<input type="password" placeholder="Password">
+								<input type="password" placeholder="Confirm Password">
+							</section> <!-- end elements-input password -->
+					  	<section class="section-inputs" >
+								<input type="submit" value="Sign up" class="buttons-form">
+								<input type="submit" value="Sign in" class="buttons-form">	
+							</section> <!-- end section-inputs and buttons-form -->
+				</section> <!-- elements-form -->
+		</form> <!-- end modal-form -->
+</main> <!-- end main modal-form -->
+
+	<!-- 	BASIC CONTAINER FOR PAGE -->
+<main class="basic-container"> 
+    <!--VIDEO-BACKGRAOUND -->
+	<section class="video-coverr">	
+			<video autoplay loop muted playsinline class="bg_video">
+				<source src="video_coverr/Tropical.mp4"></source>
+				<source src="video_coverr/Tropical.webm" type="video/webm"></source>
+			</video>
+
+		<!-- OVERLAY-TEXT FOR VIDEO -->
+			<section class="overlay-text"> 
+	  		 <!--  	it is not correct to use "h1" for this text becouse is not semantic 
+					so it will be difficult in search...but it is only example-->
+				<h1>Travel deprives you of speech, and 
+				<span>then turns you into a better storyteller</span></h1>
+    		<a href="#" class="main-btn">Find out more</a>
+		</section> <!-- end block overlay-text-->
+	</section> <!-- end block video-coverr -->
+
+<!--  block trevel-guide --> 
 	<section class="tevel-guide">
-		<a href="#">
-			<img src="images/travel_guide.jpg" alt="travel-guide">
-		</a>
-	<section class="describe-guide">
-	    <h2>Travel guides</h2>
-	    <p>Ready to go? Get to the heart of Caribbean with one of Lonely Planet's <span>  in-depth, award-winning guidebooks.</span></p> 
-	    <a href="#" class="main-btn">Read more</a>
-	</section> <!-- describe-guide -->
-</section> <!-- tevel_guide -->
+				<a href="#"><img src="images/travel_guide.jpg" alt="travel-guide"></a>
+				<section class="describe-guide">
+	   		<h2>Travel guides</h2>
+	   		<p>Ready to go? Get to the heart of Caribbean with one of Lonely Planet's <span> in-depth, award-winning guidebooks.</span></p> 
+	   		<a href="#" class="main-btn">Read more</a>
+				</section> <!-- describe-guide -->
+	</section> <!-- tevel_guide -->
 
 <!-- above block contain such as elements like "article" which represents an independent part of the document -->
-<section class="about-conteiner">
-	<section class="title-about">
-	<h2>About us</h2>
-	</section>
-	<section class="articles-about"> 
-	<article> 
-		<h3>A TRAVEL AGENCY</h3>
-		<p>For more than 85 years, GJ Travel (Guðmundur Jónasson Travel) has hosted travelers from all corners of the world. Through our company many have returned time and time again together with their families and friends, to experience Iceland’s beautiful nature and historical traditions. Our dedicated team never loses sight of the “personal touch” and works hard to ensure that the varied and interesting itineraries offered by GJ Travel provide fully for the needs of today’s travelers.</p>
-    </article>
-
-	<article>
-		<h3>A COACH COMPANY</h3>
-		<p>Our company was formed in 1929 when our founder Guðmundur Jónasson obtained his first driving license. Fascinated by the seldom explored interior, he ventured out to the highlands and even onto the glaciers, opening a whole new world to the 20th-century traveler. Since his death in 1985, his family has continued to share his love and enthusiasm for Iceland and are committed to introducing even more interesting tours and adventures for everyone to enjoy.</p>
-	</article>	
-
-	<article>
-		<h3>TRIPS AND GROUP TOURS </h3>
-		<p>We offer scheduled Winter and Summer tours in our FIT Department while our Group Department can create itineraries to suit all needs. These include specific “special interest” tours for groups keen on photography, bird watching or geology – and for school trips, as well as organizing walking and natural history tours. They will arrange for all accommodation and transportation – which can include camping, farmhouse accommodation and/or hotels – and we always provide a specialist tour guide.</p>
-	</article>	
+<section class="about-conteiner" id="about">
+		<section class="title-about">
+			<h2>About us</h2>
+			</section> <!-- title-about -->
+				<section class="articles-about"> 
+					<article> 
+					<h3>A TRAVEL AGENCY</h3>
+					<p>For more than 85 years, GJ Travel (Guðmundur Jónasson Travel) has hosted travelers from all corners of the world. Through our company many have returned time and time again together with their families and friends, to experience Iceland’s beautiful nature and historical traditions. Our dedicated team never loses sight of the “personal touch” and works hard to ensure that the varied and interesting itineraries offered by GJ Travel provide fully for the needs of today’s travelers.</p>
+    			</article>
+					<article>
+					<h3>A COACH COMPANY</h3>
+					<p>Our company was formed in 1929 when our founder Guðmundur Jónasson obtained his first driving license. Fascinated by the seldom explored interior, he ventured out to the highlands and even onto the glaciers, opening a whole new world to the 20th-century traveler. Since his death in 1985, his family has continued to share his love and enthusiasm for Iceland and are committed to introducing even more interesting tours and adventures for everyone to enjoy.</p>
+					</article>	
+					<article>
+					<h3>TRIPS AND GROUP TOURS </h3>
+					<p>We offer scheduled Winter and Summer tours in our FIT Department while our Group Department can create itineraries to suit all needs. These include specific “special interest” tours for groups keen on photography, bird watching or geology – and for school trips, as well as organizing walking and natural history tours. They will arrange for all accommodation and transportation – which can include camping, farmhouse accommodation and/or hotels – and we always provide a specialist tour guide.</p>
+					</article>	
 	</section> <!-- end articles -->
 </section> <!--  end about-container -->
 
-<!-- Start block which comtain news -->
-<section class="news-conteiner">
-	<section class="headers-news">
-		<h4>Latest news</h4>
-		<p class="subtitle_news"> Our latest news to keep you updated about our offering or upcoming events.</p>
-	</section> <!-- headers-news -->
+<!-- NEWS CONTEINAR -->
+	<section class="news-conteiner" id="news">
+			<section class="headers-news">
+				<h4>Latest news</h4>
+				<p class="subtitle_news"> Our latest news to keep you updated about our offering or upcoming events.</p>
+			</section> <!-- headers-news -->
+
 	<!-- first box news -->
-	<section class="box-news"> 
-		<figure>
-			<a href="#"><img src="images/bali_news.jpg" alt="bali" ></a>
+		<section class="box-news"> 
+			<figure>
+				<a href="#"><img src="images/bali_news.jpg" alt="bali" ></a>
 				<figcaption>
-					<time pubdate>January 24, 2019</time>
-					<p>Related: What are the most popular tours in Bali...?</p>
-					<a href="#" class="news_read">Read more</a>
+				<time pubdate>January 24, 2019</time>
+				<p>Related: What are the most popular tours in Bali...?</p>
+				<a href="#" class="news_read">Read more</a>
 				</figcaption>
-		</figure>
+			</figure>
+
 		<!-- second box news -->
-		<figure>
-			<a href="#"><img src="images/bermuda_news.jpg" alt="bermuda"></a>
+			<figure>
+				<a href="#"><img src="images/bermuda_news.jpg" alt="bermuda"></a>
 				<figcaption>
-					<time pubdate>March 8, 2019</time>
-					<p>Lose yourself in the enchanting scenery and crystal waters...</p>
-					<a href="#" class="news_read">Read more</a>
+				<time pubdate>March 8, 2019</time>
+				<p>Lose yourself in the enchanting scenery and crystal waters...</p>
+				<a href="#" class="news_read">Read more</a>
 				</figcaption>
-		</figure>
+			</figure>
+
 		<!-- third box news -->
-		<figure>
-			<a href="#"><img src="images/maldives_news.jpg" alt="maldives"></a>
+			<figure>
+				<a href="#"><img src="images/maldives_news.jpg" alt="maldives"></a>
 				<figcaption>
-					<time pubdate>February 22, 2019</time>
-					<p>Banyan Tree Hotels & Resorts Celebrates 25th Anniversary...</p>
-					<a href="#" class="news_read">Read more</a>
-		   		</figcaption>
-		</figure>
-	</section> <!-- box-news -->
-</section>  <!-- news_conteiner -->
-</main><!--basic-container -->
+				<time pubdate>February 22, 2019</time>
+				<p>Banyan Tree Hotels & Resorts Celebrates 25th Anniversary...</p>
+				<a href="#" class="news_read">Read more</a>
+		   	</figcaption>
+			</figure>
+		</section> <!-- box-news -->
+	</section>  <!-- news_conteiner -->
+</main><!--basic-container main-->
 		
 <footer>
 	<section class="footer-container">
 			<section class="info-tours islands">
-				<h6><span>Islands</span>Islands</h6>
+				<h6><span>Islands</span></h6>
 				<ul>
 					<li><a href="#">Bali</a></li>
 					<li><a href="#">Maldives</a></li>
@@ -202,11 +207,12 @@ togglemenu for responsive by using @media -->
 					</section>
 		</section> <!-- social-connect-->
 			
-	</section>  <!-- footer_container -->
-			<section class="copyraiting">
-				Copyright &copy; All rights reserved.
-			</section> <!-- copyraiting -->
+		</section>  <!-- footer_container -->
+				<section class="copyraiting">
+						Copyright &copy; All rights reserved.
+				</section> <!-- copyraiting -->
 </footer>
 
+	<script src="js/script.js"></script>
 </body>
 </html>

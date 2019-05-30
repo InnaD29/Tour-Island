@@ -10,12 +10,12 @@
       height: 100%;
       z-index: 100;
       display: none;
-      pointer-events: none;
+      /*pointer-events: none;*/
 }
-main.conteiner-form:target {
+/*main.conteiner-form:target {
      display: flex;
      pointer-events: auto;
-}
+}*/
 /*styling simantic element "form"*/
 form.modal-form {
       width: 40%;
@@ -71,6 +71,7 @@ input.buttons-form {
       height: 40px;
       color: #FFF;
       font-size: 1.2em;
+      cursor: pointer;
 }
 input.buttons-form:hover{background-color: #0066FF;}
 
