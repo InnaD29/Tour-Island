@@ -16,11 +16,9 @@
 togglemenu for responsive by using @media -->
 <header>
 	<!-- STATR LOGO -->
-	<figure>
 		<a href="#">
 			<img src="images/logotype.png" alt="logo-img-palm">
 		</a> <!-- end logo -->
-	</figure>
 	<!-- START NAVBAR -->
 	<nav class="top-menu">
 		<ul class="navbar">
@@ -31,7 +29,6 @@ togglemenu for responsive by using @media -->
 		    <li><a href="#">Contact</a></li>
 		</ul>
 	</nav> <!-- end navbar -->
-
     <!-- START TOGGLE-MENU ROR RESPONSIVE -->
 	<nav class="toggle-menu">
 		<label for="menu-toggle"><i class="fas fa-bars"></i>Toggle menu</label>
@@ -51,38 +48,45 @@ togglemenu for responsive by using @media -->
 		<input type="search" placeholder="Srearch here">
 	</form><!-- end form-search -->
 	<!-- START BUTTON SIGN UP -->
-	<button id="btn-sign-up" class="btn-sign-up"><span>Sign up</span></button>
-
-<!-- START MODAL-FORM FOR RESPONSIVE -->
-	<main id="modal-form" class="modal-form" > 
-		<form action="#" method="#">
-			<span id="close-form-modal" class="close-form"><i class="far fa-times-circle"></i></span>
-			<p>Sign in to continue</p>
-			<p>If you've booked a tour or traveled with us in the past, you already have an account.</p>
-			<a href="#">I don't have a password or I forgot my password.</a>
-			<label for="e-mail"></label>
-			<input type="E-mail" id="e-mail">
-			<input type="password">
-			<button class="submit-sign-in" onclick="viewForm()">Submit</button>
-		</form> <!-- end modal-form -->
-	</main> <!-- end main modal-form -->
+	<a href="#open-modal-form" class="btn-sign-up">Sign up</a>
 </header> <!-- the end header -->
-
+<!-- START MODAL-FORM FOR RESPONSIVE -->
+<main class="conteiner-form" id="open-modal-form"> 
+	<form action="#" method="#" class="modal-form">
+		<a href="#" class="close-form"><i class="far fa-times-circle"></i></a>
+		<p class="sign-up">Sign up</p>
+			<section class="elements-form">
+					<section class="section-inputs">	
+						<input type="text" placeholder="First name" >
+						<input type="text" placeholder="Last name">
+					</section> <!-- elements-input first-name -->
+					<section class="section-inputs">
+				    	<input type="E-mail" placeholder="E-mail">
+					</section> <!-- elements-input email -->
+				    <section class="section-inputs"> 
+						<input type="password" placeholder="Password">
+						<input type="password" placeholder="Confirm Password">
+					</section> <!-- elements-input password -->
+					<section class="section-inputs" >
+						<input type="submit" value="Sign up" class="buttons-form">
+						<input type="submit" value="Sign in" class="buttons-form">	
+					</section> <!-- section-inputs and buttons-form -->
+			</section> <!-- elements-form -->
+	</form> <!-- end modal-form -->
+</main> <!-- end main modal-form -->
 <!-- Start block video-coverr which contain video and overlay-text and button have been named "See more" -->
 <main class="basic-container"> 
 	<section class="video-coverr">	
-	<video autoplay loop muted playsinline class="bg_video">
-		<source src="video_coverr/Tropical.mp4"></source>
-		<source src="video_coverr/Tropical.webm" type="video/webm"></source>
+		<video autoplay loop muted playsinline class="bg_video">
+			<source src="video_coverr/Tropical.mp4"></source>
+			<source src="video_coverr/Tropical.webm" type="video/webm"></source>
 	</video>
-	
 	<section class="overlay-text"> 
 		<h1>Travel deprives you of speech, and 
-		<span>then turns you into a better storyteller</span>
-		</h1>
-    <a href="#" class="main-btn">Find out more</a>
+		<span>then turns you into a better storyteller</span></h1>
+    	<a href="#" class="main-btn">Find out more</a>
 	</section> <!-- end block overlay-text-->
-</section>
+</section> <!-- end block video-coverr -->
 
 <!-- Start block trevel-guide --> 
 	<section class="tevel-guide">

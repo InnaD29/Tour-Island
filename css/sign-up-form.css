@@ -1,21 +1,85 @@
- main.modal-form {
-  display: flex; 
-  justify-content:;
-  /*display: none;*/
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.2);
+/* styling main-conteiner for modal form*/
+ main.conteiner-form {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      background-color: rgba(0,0,0,.9);
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      display: none;
+      pointer-events: none;
 }
-.modal-form form {
-  display: flex; 
-  background-color: #fff;
-  width: 60%;
-  height: 450px;
-  display: block;
-  margin: 5% auto;
+main.conteiner-form:target {
+     display: flex;
+     pointer-events: auto;
 }
+/*styling simantic element "form"*/
+form.modal-form {
+      width: 40%;
+      height: 400px;
+      margin: 0 auto;
+      align-self: center;
+      background-color: #FFF;
+      display: flex;
+      flex-flow: column;
+      border-radius: 10px;
+      background-color: #F8F8FF;
+}
+a.close-form {
+      align-self: flex-end;
+      margin: 10px;
+}
+/*icon for close modal-form*/
+.fa-times-circle {
+      font-size: 20px; 
+      color: #171717;
+}
+p.sign-up {
+      line-height: 1.5em;
+      font-size: 2em;
+      align-self: center;
+      color:  #6495ED;
+      font-weight: bold;
+      margin-bottom: 10px;
+}
+.elements-form {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #DCDCDC;
+      border-radius: 0 0 10px 10px;
+}
+.section-inputs {
+      display: flex;
+      justify-content: center;
+}
+.section-inputs input {
+      width: 100%;
+      height: 35px;
+      margin: 10px 15px 10px 15px;
+      outline: none;
+      border-radius: 5px;
+      border: none;
+}
+input.buttons-form {
+      margin-top: 20px;
+      background-color: #2C75FF;
+      border: none;
+      height: 40px;
+      color: #FFF;
+      font-size: 1.2em;
+}
+input.buttons-form:hover{background-color: #0066FF;}
+
+input[type="text"]      {padding-left: 10px;}
+input[type="E-mail"]    {padding-left: 10px;}
+input[type="password"]  {padding-left: 10px;}
+
+
+
+
+
+
