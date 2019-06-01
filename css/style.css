@@ -152,9 +152,8 @@ form.search {position: relative; z-index: 2;}
 .video-coverr {
 	margin-top: 120px;
 	position: relative;
-	height: 300px;
-	width: 100%;
 	height: 100%;
+	width: 100%;
 	z-index: -100px;
 }
 video.bg_video {
@@ -187,7 +186,7 @@ video.bg_video {
 /*START IS STYLING TREVEL-GUIDE SECTION*/
 .tevel-guide {/* container for trevel-guide*/
 	display: flex;
-	margin: 100px auto;
+	margin: 50px auto;
 	width: 85%;
 }
 .tevel-guide img {
@@ -216,13 +215,13 @@ video.bg_video {
 
 /**************STYLING ABOUT-CONTAINER**************/
 .about-conteiner {
-	margin: 100px auto;
+	margin: 0 auto;
 	width: 85%;
 }
 .title-about h2 {
 	color: #756F6F;
 	font-size: 3em;
-	margin: 100px 0 50px 0;
+	margin: 50px 0 20px 0;
 	text-align: center;
 	text-transform: capitalize;
 }
@@ -241,12 +240,14 @@ video.bg_video {
 	margin: 20px;	
 	font-size: 1.2em;
 	text-align: center;
+	color: #000;
 }
 
-/***************STYLING NEWS-CONTEINER***********/
+/***************START STYLING NEWS-CONTEINER***********/
 .news-conteiner {
 	margin: 100px auto;
 	width: 85%;
+	
 }
 .headers-news h4 {
 	color: #756F6F;
@@ -260,10 +261,9 @@ video.bg_video {
 	margin: 30px 0 50px 20px;
 }
 .box-news {display: flex;}
-
 .box-news figure {
-	border: 1px solid #dcd;
-	box-shadow: 0 0 10px rgba(0,0,0,.6)
+	border: 1px solid #DCDCDC;
+	box-shadow: 0 0 10px rgba(0,0,0,.6);
 	flex: 1;
 	margin: 20px;
 }
@@ -279,7 +279,6 @@ video.bg_video {
 .box-news img {
 	display: block;
 	margin: 0 auto;
-	padding: 0;
 	height: 210px;
 	width: 100%;
 }
@@ -289,8 +288,9 @@ video.bg_video {
 	text-decoration: none;
 }
 .box-news a:hover {text-decoration: underline;}
+/******************START STYLING FOOTER*/
 
-/******************STYLING FOOTER*/
+/******************STYLING FOOTER*******/
 footer {
 	background-color: #000;
 	overflow: hidden;
@@ -313,7 +313,7 @@ footer {
 	width: 200px;
 }
 .footer-container ul {
-	margin:  0 auto;
+	margin: 0 auto;
 	width: 200px;
 }
 .footer-container a {
